@@ -1,0 +1,135 @@
+
+    body {
+        font: 12px 'malgun Gothic',sans-serif,'arial','dotum','gulim',Verdana,Dotum,AppleGothic;
+        color: #353535;
+        background: #fff;    
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        width: 700px;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: collapse;
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: grey;
+        margin: auto;
+    }
+
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+    th, td {
+        border: 0;
+        vertical-align: top;
+    }
+
+    input {
+        padding: 2px 2px 2px 4px;
+        border: 1px solid #d9d9d9;
+        color: #202020;
+    }
+
+    input, select, textarea {
+        font-size: 100%;
+        font-family: 'malgun Gothic','arial','dotum','gulim';
+        color: #353535;
+        vertical-align: middle;
+    }
+
+    input[type=submit] {
+        background-color: #d5d5d5;
+        padding: 6px;
+        border: 0;
+        border-radius: 25%;
+        transition: all 0.15s;
+        
+    }
+
+    input[type=submit]:hover {
+        background-color: #FFFFFF;
+        color : #000000;
+    }
+
+    input[type=text], textarea {
+        height : 19px;
+        width: 600px;
+        padding: 3px 0 0 9px;
+        border: 1px solid #d5d5d5;
+        
+    }
+
+    textarea {
+        height : 200px;
+    }
+    
+    .tdTit {
+        width : 75px !important;
+    }
+    
+    .btn {
+        text-align: center;
+        padding: 10px 0 20px 0;
+        margin: 10px 0 0 0;
+    }
+
+    #subject {
+        width: 600px;
+    }
+
+    #Email__c, #inputAccountname__c, #InputProductName__c {
+        width : 170px;
+        padding: 0 3px;
+        padding: 3px 0 0 9px;
+        border: 1px solid #d5d5d5;
+    }
+    #Quantity__c {
+        width : 100px !important;
+    }
+    #wrap td {
+        width: auto;
+        padding: 10px 0 8px 10px;
+        border-top: 1px solid #e8e8e8;
+    }
+
+    #wrap {
+        width :900px;
+        margin: auto;
+    }
+
+    #wrap th {
+        width: 110px;
+        padding: 10px 0 8px 20px;
+        border-top: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        background-color: #fbfafa;
+        text-align: left;
+        font-weight: normal;
+        vertical-align: middle;
+    }
+
+    #content {
+        text-align: center;
+        padding: 60px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    #tt {
+        color : #848484;
+    }

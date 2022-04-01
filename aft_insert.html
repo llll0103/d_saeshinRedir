@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/saeshin_css.css" >
+    <title>?</title>
+</head>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        function Loading() {
+            var maskHeight = $(document).height();
+            var maskWidth  = window.document.body.clientWidth;
+             
+            var mask       = "<div id='mask' style='position:absolute; z-index:9000; display:none; left:0; top:0;'></div>";
+            var loadingImg ='';
+             
+            loadingImg +=" <div id='loadingImg'>";
+            loadingImg +=" <img src='/img/loading.gif'/>";
+            loadingImg += "</div>"; 
+             
+         
+            $('body')
+                .append(mask)
+         
+            $('#mask').css({
+                'width' : maskWidth,
+                'height': maskHeight,
+                'opacity' :'0.3'
+            });
+            
+            $('#mask').show();
+          
+            $('.loadingImg').append(loadingImg);
+            $('#loadingImg').show();
+        }
+
+        $(function() {
+
+            Loading();	
+            setTimeout("location.href='http://saeshinmall.com/board/product/list.html?board_no=6'",100000);
+            //setTimeout("closeLoading()", 3000);
+        
+        });
+    </script>
+    <style>
+        #map {
+            margin : auto;
+            text-align: center;
+        }
+    </style>
+<body>
+    <div id="wrap">
+        <img src="/img/세신유나이티드_로고.png"/>
+        <hr>
+        <div id="content">
+            <input type=hidden name="retURL" value="http://saeshinmall.com/board/product/write.html?board_no=6">
+            <span>
+            <p>문의 사항이 등록되었습니다.</p>
+            <p>접수가 확인되면 이메일로 회신드리겠습니다. </p>
+            </span>
+            <br/>
+            <div id="map" class="loadingImg"></div>
+            <p id="tt">잠시 후 화면이 이동합니다.</p>
+        </div>
+        <hr>
+    </div>
+    <!-- <div class="btn" id="backBtn">
+        <input type="submit" name="" value="바로이동">
+    </div> -->
+</body>
+</html>
